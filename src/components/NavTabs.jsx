@@ -2,29 +2,29 @@ import { Link, useLocation } from "react-router-dom";
 import "../css/navtabs.css";
 
 export default function NavTabs(){
-  const currentPage = useLocation().pathName.toLowerCase();
+  const currentPage = useLocation().pathname;
 
   return(
     <nav>
       <ul>
         <li>
-          <Link>
-          
+          <Link to="/About">
+            About
           </Link>
         </li>
         <li>
-          <Link>
-          
+          <Link to="/Portfolio">
+            Portfolio
           </Link>
         </li>
         <li>
-          <Link>
-          
+          <Link to="/Contact">
+            Contact
           </Link>
         </li>
         <li>
-          <Link>
-          
+          <Link to="/Resume">
+            Resume
           </Link>
         </li>
       </ul>
