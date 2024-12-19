@@ -8,7 +8,7 @@ export default function NavTabs(){
     <nav>
       <ul className="flex-row" id="header-ul">
         <li>
-          <Link to="/About" className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>
+          <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
             About
           </Link>
         </li>
