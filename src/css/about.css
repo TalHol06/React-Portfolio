@@ -1,0 +1,12 @@
+.profile-pic{
+  height: 70px;
+  width: 70px;
+  border-radius: 140px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.aboutme-p{
+  margin-top: 30px;
+  line-height: 1.5;
+  font-size: 18px;
+}

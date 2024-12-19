@@ -6,24 +6,24 @@ export default function NavTabs(){
 
   return(
     <nav>
-      <ul>
+      <ul className="flex-row" id="header-ul">
         <li>
-          <Link to="/About">
+          <Link to="/About" className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>
             About
           </Link>
         </li>
         <li>
-          <Link to="/Portfolio">
+          <Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
             Portfolio
           </Link>
         </li>
         <li>
-          <Link to="/Contact">
+          <Link to="/Contact" className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>
             Contact
           </Link>
         </li>
         <li>
-          <Link to="/Resume">
+          <Link to="/Resume" className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
             Resume
           </Link>
         </li>

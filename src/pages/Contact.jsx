@@ -31,7 +31,7 @@ export default function Contact(){
 
   return (
     <div>
-      <section>
+      <section className="flex-container">
         <form>
           <h2>Contact</h2>
           <label>Name:</label>
@@ -46,6 +46,7 @@ export default function Contact(){
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            on
           />
 
           <label>Message:</label>

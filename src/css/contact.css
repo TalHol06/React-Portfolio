@@ -1,0 +1,42 @@
+:root{
+  --color-primary-light: #388DF8;
+  --color-bg-light: #F3F4F6;
+}
+
+input, textarea, label{
+  display: block;
+  margin-bottom: 8px;
+  width: 400px;
+  border-width: 2px;
+  border-radius: 6px;
+}
+
+input{
+  height: 25px;
+  box-shadow: 2.5px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+textarea{
+  height: 100px;
+  box-shadow: 2.5px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+label{
+  font-weight: bold;
+}
+
+button{
+  height: 30px;
+  width: 70px;
+  background-color: var(--color-primary-light);
+  border: solid;
+  border-radius: 4px;
+  border-color: var(--color-primary-light);
+  color: var(--color-bg-light);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.9;
+}

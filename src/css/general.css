@@ -1,0 +1,89 @@
+:root{
+  --color-primary: #1E293B;
+  --color-footer-top-border: #121822;
+  --color-text: #111827;
+  --color-text-secondary: #6B7280;
+  --color-section-background: #dbf6ff;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial';
+}
+
+header{
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Ink free', 'Arial', 'Times New Roman';
+  height: 120px;
+  width: 100%;
+}
+
+header h1{
+  font-size: 40px;
+  height: 0;
+  margin-bottom: 70px;
+  margin-left: 20px;
+  color: var(--color-text-secondary);
+}
+
+section{
+  background-color: var(--color-section-background);
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  color: var(--color-text);
+}
+
+section:only-child{
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+footer{
+  border-top: solid;
+  border-top-color: var(--color-footer-top-border);
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.github-img{
+  height: auto;
+  width: 100px;
+  filter: brightness(5);
+}
+
+.github-img:hover{
+  opacity: 0.8;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px){
+  header h1{
+    margin: 0;
+    margin-bottom: 90px;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 868px){
+  header h1{
+    margin: 0;
+    margin-bottom: 45px;
+    margin-left: 10px;
+  }
+}
